@@ -1,6 +1,6 @@
 // Created a controller to handle creating and getting artist information
 
-const Artist = require('../models/Artist');
+const Artist = require('../models/artist');
 
 exports.post = (req, res) => {
   const artist = new Artist({ name: req.body.name, genre: req.body.genre });
